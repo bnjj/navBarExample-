@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Normalize CSS para hacer un resultado lo mas similar posible en todos los navegadores-->
     <link rel="stylesheet" href="normalize.css">
+
+  <!-- Uso de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <!-- Hoja de estilos CSS -->
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,12 +20,17 @@
 
     <main class="nav">
         <div class="nav__contenido">
-            <img class="nav__contenido__logo"src="img/logo.png" alt="LogoPizza">
-            <p>Logo</p>
-            <a href="#"><p>Opcion</p></a>
-            <a href="#"><p>Opcion</p></a>
-            <a href="#"><p>Opcion</p></a>
-            <a href="#"><p>Opcion</p></a>
+            
+                <div class="nav__logo">
+                <img class="nav__logo__imagen" src="img/logo.png" alt="LogoPizza">
+                <p class="nav__logo__nombre">Crazy <br>Pizzas</p>
+            </div>
+           
+            
+            <a class="nav__enlace" href="#"><p>Inicio</p></a>
+            <a class="nav__enlace" href="#"><p>Productos</p></a>
+            <a class="nav__enlace" href="#"><p>Takeaway</p></a>
+            <a class="nav__enlace" href="#"><p>Contactanos</p></a>
         </div>
       
     </main>
