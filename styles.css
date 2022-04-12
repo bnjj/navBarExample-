@@ -1,0 +1,19 @@
+
+
+.nav {
+
+   border:2px solid green;
+   
+}
+
+.nav__contenido {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav__contenido__logo{
+
+    width:10%;
+}
