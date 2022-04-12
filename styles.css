@@ -54,10 +54,13 @@
 .nav__enlace{
 
   
-    
     text-decoration: none;
+    font-size: 1.5em;
     color: var(--colorSecundario);
-   
+    
+    
+    
+    
     
     
 }
@@ -109,6 +112,6 @@
 
  }
 
- .nav__enlace:hover {
+ .nav__enlace--activo:hover {
      color:var(--colorSeleccion);
  }
