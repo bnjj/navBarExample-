@@ -99,7 +99,7 @@
         display: none;
     }
     .nav__contenido{
-
+        height: 8rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
