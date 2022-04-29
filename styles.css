@@ -13,6 +13,7 @@
    color: var(--colorSecundario);
     background-color: var(--colorPrincipal);
    
+   
 }
 /* Navegacion contenido interno */
 .nav__contenido {
@@ -32,6 +33,7 @@
     justify-content:center;
     align-items: center;
     border-bottom: solid 1px var(--colorSecundario);
+    height: 6rem;
   
    
 }
@@ -76,7 +78,7 @@
     }
     
     .nav__logo{
-
+        height: 8rem;
         border: 0;
     }
     .nav__logo__nombre {
