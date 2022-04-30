@@ -178,12 +178,7 @@ p{
 
  /* Seccion Promo */
 
- .promo{
-     
-      /* background-color: var(--colorSeleccion);  */
-     
- 
- }
+
  .promo__texto{
    
      text-align: center;
@@ -211,4 +206,44 @@ font-weight: 700;
   border: none;
   background-color: var(--colorPrincipal);
   color: var(--colorSecundario);
+}
+
+
+/* Media querie secccion promo */
+
+@media (min-width: 992px) 
+{
+    .promo__flex{
+        display: flex;
+        
+        justify-content:space-between;
+    flex: 1; 
+    }
+    
+    .promo__imagen{
+       
+        width: 49%;
+        height: 55vh;
+        order: 2;
+        
+    }
+    .promo__principal {
+       
+        width: 49%;
+        height: 55vh;  
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .btn{
+      
+       
+        border-radius: 10rem;
+        width: 18rem;
+       
+    }
+
 }
