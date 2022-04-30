@@ -253,3 +253,10 @@ font-weight: 700;
     }
 
 }
+
+/* Nosotros */
+
+.nos{
+    background-color:var(--colorSeleccion);
+    text-align: center;
+}
