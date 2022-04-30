@@ -1,10 +1,27 @@
 /* Declaracion Variable*/
 :root{
-    --colorPrincipal:#e1d800;
+    --colorPrincipal:rgb(253,221,100);
+    --colorPrincipalFuerte:#e1d800;
     --colorSecundario: #e12301;
     --colorSeleccion: 	#dba24a;
+    /* color a probar 253 221 100 #e1d800 */
 
 
+}
+body {
+    font-family: 'Amatic SC', cursive;
+    color: var(--colorSecundario);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+h1{
+    font-size: 4.0rem;
+}
+h2{
+    font-size: 3.5rem;
+}
+p{
+    font-size: 2.5rem;
 }
 /* Navegacion  */
 .nav {
@@ -16,12 +33,8 @@
 }
 /* Navegacion contenido interno */
 .nav__contenido {
-    font-family: 'Amatic SC', cursive;
-    font-weight: 700;
-    font-size: 1.3em;
+
     text-align: center;
-    
-   
     
     
 }
@@ -72,7 +85,7 @@
      padding: 1rem;
     margin: 0.1rem;
     font-size: 1.8rem;
-    background-color: var(--colorSeleccion);
+    /* background-color: var(--colorSeleccion); */
     border-radius: 0.5rem;
 }
 .menu__boton{
@@ -161,3 +174,41 @@
 
  }
 
+
+
+ /* Seccion Promo */
+
+ .promo{
+     
+      /* background-color: var(--colorSeleccion);  */
+     
+ 
+ }
+ .promo__texto{
+   
+     text-align: center;
+     padding: 0rem 0.3rem;
+ }
+ .promo__imagen{
+     background-image: url("../img/promo.jpg");
+     background-position: center;
+     background-size: cover;
+ 
+     width: 100%;
+     height: 18rem; 
+ }
+
+
+
+
+ .btn{
+    display: block;
+margin: 2rem 0;
+padding:2rem 0rem;
+font-size: 2.5rem;
+width: 100%;
+font-weight: 700;
+  border: none;
+  background-color: var(--colorPrincipal);
+  color: var(--colorSecundario);
+}
