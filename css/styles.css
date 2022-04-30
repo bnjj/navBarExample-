@@ -246,4 +246,10 @@ font-weight: 700;
        
     }
 
+    .btn:hover{
+        
+        transform: scale(1.3);
+        transition: all .3s ease-in-out;
+    }
+
 }
