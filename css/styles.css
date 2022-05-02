@@ -113,63 +113,60 @@ p{
 }
 
 
-/* Media queries para dispostivos escritorio */
-@media (min-width: 768px) {
-    .menu__toggle:checked + .nav__enlaces {
-        display: flex;
-    }
-  .nav__enlaces {
-        display: flex;
-    }
-   
-    .menu__boton{
-        display: none;
-    }
-    .nav__contenido{
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+
+/* Nosotros */
+
+.nos{
+    background-color: aqua;
+    text-align: center;
     
-    .nav__logo{
-
-        border: 0;
-    }
-    .nav__logo__nombre {
-   
-        font-size: 1.8em;
-    }
-    .nav__logo__imagen {
-
-        width: 8rem;
-      
-    
-        
-    }
-    .nav__enlace
-    {
-        display: flex;
-        font-size: 1.5em;
-        padding: 0rem 2rem;
-       
-    }
-    .nav__enlace--activo:hover {
-     
-        color:var(--colorSeleccion);
-        transition: all 0.3s ;
-       }
+}
+.nos__texto{
+    font-size: 1.5rem;
 }
 
 
-@media (min-width: 900px)
+.icono__container{
+    
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+   
+    
+    
+}
+.icono__titulo{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.icono{
+    width: 12rem;
+    font-size: 2.5rem;
+    text-align: center;
+   
+}
+.icono__texto{
+    text-align: center;
+    font-size: 1.3rem;
+   width: 35%;
+   margin-left: 1.5rem;
+   
+}
+
+@media (min-width: 992px)
  {
     .nav__logo__nombre {
    
         font-size: 2.2em;
     }
   .nav__enlace{
-      font-size: 2em;
+    padding: 0rem 2rem;
+  }
+  .enlace__texto{
+      font-size:2.2rem;
   }
 
  }
@@ -209,6 +206,81 @@ font-weight: 700;
 }
 
 
+footer{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+/* Media queries para dispostivos escritorio */
+@media (min-width: 768px) {
+    .menu__toggle:checked + .nav__enlaces {
+        display: flex;
+    }
+  .nav__enlaces {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    
+    .menu__boton{
+        display: none;
+    }
+    .nav__contenido{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    
+    .nav__logo{
+
+        border: 0;
+    }
+    .nav__logo__nombre {
+   
+        font-size: 1.8em;
+    }
+    .nav__logo__imagen {
+
+        width: 8rem;
+      
+    
+        
+    }
+    .nav__enlace
+    {
+        display: flex;
+        
+        padding: 0rem .8rem;
+       
+    }
+    .enlace__texto{
+
+        font-size: 2rem;
+    }
+    
+    .nav__enlace--activo:hover {
+     
+        color:var(--colorSeleccion);
+        transition: all 0.3s ;
+       }
+
+       .icono__container{
+           width: 80%;
+           margin: 0 auto;
+       }
+       .icono__texto{
+        text-align: center;
+       width: 60%;
+       font-size:1.5rem;
+        margin: 0 auto;
+        margin-top: 0.5rem;
+        
+    }
+
+}
 /* Media querie secccion promo */
 
 @media (min-width: 992px) 
@@ -254,43 +326,3 @@ font-weight: 700;
 
 }
 
-/* Nosotros */
-
-.nos{
-    background-color: aqua;
-    text-align: center;
-    
-}
-.nos__texto{
-    font-size: 1.5rem;
-}
-
-
-.icono__container{
-    
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-around;
-   
-    
-    
-}
-.icono__titulo{
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.icono{
-    width: 12rem;
-    font-size: 2.5rem;
-    text-align: center;
-   
-}
-.icono__texto{
-    text-align: center;
-    font-size: 1.3rem;
-   width: 35%;
-   margin-left: 1.5rem;
-   
-}
