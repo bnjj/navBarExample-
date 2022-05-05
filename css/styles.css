@@ -117,7 +117,7 @@ p{
 
 /* Nosotros */
 
-.nos{
+.nos{ padding: 1rem;margin-top: 3rem;
     background-color: aqua;
     text-align: center;
     
@@ -279,7 +279,9 @@ footer{
         margin-top: 0.5rem;
         
     }
-
+    .nos{
+        margin-top: 5rem;
+    }
 }
 /* Media querie secccion promo */
 
@@ -320,7 +322,7 @@ footer{
 
     .btn:hover{
         
-        transform: scale(1.3);
+        transform: scale(1.1);
         transition: all .3s ease-in-out;
     }
 
