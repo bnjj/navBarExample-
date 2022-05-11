@@ -191,6 +191,18 @@ font-weight: 700;
   color: var(--colorSecundario);
 }
 
+
+.clientes{
+   
+    padding-top: 3rem;
+    background-color: rgb(237, 100,126);
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: white;
+}
+.clientes__texto{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
 .cliente__box{
  
     background-image: url("../img/placeholder.jpg");
@@ -281,7 +293,7 @@ footer{  padding-top: 1rem; }
         
         }
     .nos{
-        margin-top: 5rem;
+        margin-top: 0rem;
     }
 }
 /* Media querie secccion promo */
@@ -304,11 +316,12 @@ footer{  padding-top: 1rem; }
     }
     
     .promo__imagen{
-       
         width: 49%;
-        height: 55vh;
-        order: 2;
-        
+        height: 62vh;
+        order: 2; 
+    }
+    .promo__texto {
+        margin-left: 1rem;
     }
     .promo__principal {
        
@@ -324,7 +337,8 @@ footer{  padding-top: 1rem; }
     .btn{
 
         border-radius: 10rem;
-        width: 18rem;
+        width: 14rem;
+        font-size:2rem;
        
     }
 
@@ -364,4 +378,34 @@ footer{  padding-top: 1rem; }
 }
 
 
+@media (min-width: 1200px) 
+{
+    
+    .btn{
+        width: 16rem;
+        font-size:2.5rem;
+    }
+    h1{ font-size: 5rem; }
+    .icono__titulo{font-size: 5rem; 
+    padding-bottom: 3rem;}
+
+
+    .icono__container{
+        padding-bottom: 3rem;
+    }
+    .icono__container--servicios{
+        padding-bottom: 6.6rem;
+     }
+}
+
+@media (min-width: 1400px) {
+    
+   
+    
+    .btn{ 
+        width: 20rem;
+        font-size:3rem;
+
+    }
+}
 
