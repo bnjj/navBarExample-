@@ -13,13 +13,14 @@ body {
     color: var(--colorSecundario);
     font-weight: 700;
     font-size: 1.3rem;
+    background-color: #f1faee;
 }
 h1{
     
      font-size: 2.5rem; 
 }
 h2{
-   
+   font-size: 2rem;
 }
 p{
    
@@ -85,12 +86,32 @@ p{
 /* Nosotros */
 
 .nos{   
-    padding: 1rem;margin-top: 3rem;
-    background-color: aqua;
+    padding: 1rem;
+    margin-top: 3rem;
+    background-color: #e9c46a;
 }
 
 
+/* trabajo */
 
+.trabajo{
+
+    padding: 3rem 0rem;
+    background-color:var(--colorPrincipal);
+}
+.imagen1{
+    background-image:url("../img/promo2.jpg");
+    background-position:65% 50%;
+   background-size: cover;
+    width: 100%;
+    height: 25rem; 
+ 
+}
+
+.servicios{
+    padding: 3rem 0rem;
+    background-color: #e9c46a;
+}
 .icono__container{
     
     display: flex;
@@ -113,10 +134,10 @@ p{
     font-size: 1.3rem;
    width: 35%;
    margin-left: auto;
-   margin-right: auto;
- 
- 
-   
+   margin-right: auto;  
+}
+.icono__container--servicios{
+   padding-bottom: 3rem;
 }
 
 @media (min-width: 992px)
@@ -133,6 +154,10 @@ p{
   }
   .enlace__texto{
       font-size:2.2rem;
+  }
+  .imagen1{
+      background-position: center;
+      height: 40rem;
   }
 
  }
@@ -166,10 +191,34 @@ font-weight: 700;
   color: var(--colorSecundario);
 }
 
+.cliente__box{
+ 
+    background-image: url("../img/placeholder.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30rem; 
+}
 
+.cliente__box1{background-image: url("../img/empresa1.jpg");}
+.cliente__box2{background-image: url("../img/empresa2.jpg")}
+.cliente__box3{background-image: url("../img/empresa3.jpg");}
+.cliente__box4{background-image: url("../img/empresa4.jpg");}
+.cliente__box5{background-image: url("../img/empresa5.jpg");}
+
+.cliente__box p{  
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: white;
+     display: block;
+    padding: 1rem 0rem 0rem 1rem;
+    text-align: left; }
+     
 footer{  padding-top: 1rem; }
 
-/* Media queries para dispostivos escritorio */
+/* Media queries para dispostivos tablet */
 @media (min-width: 768px) {
     .menu__toggle:checked + .nav__enlaces {
         display: flex;
@@ -239,6 +288,15 @@ footer{  padding-top: 1rem; }
 
 @media (min-width: 992px) 
 {
+
+    .fa-solid{
+        font-size: 5rem;
+    }
+    .icono__texto{
+        font-size: 1.8rem;
+        width: 100%;
+
+    }
     .promo__flex{
         display: flex;
         justify-content:space-between;
@@ -276,42 +334,30 @@ footer{  padding-top: 1rem; }
         transition: all .3s ease-in-out;
     }
 
-    .clientes__container {
+    .clientes__container { display: flex; }
 
-        display: flex;
-
-     
-        
-    }
+    .cliente__box {box-shadow: none;}
   
-    .cliente__box p{
-        display: none;
-    }
+    .cliente__box p{  display: none;}
 
 
     .cliente__box:hover 
     {
-       
         transition: all 0.4s;
        transform: scale(1.2);
        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
-       
     }
-    .cliente__box:hover:first-of-type:hover
-    {
-        margin-left: 2%;
-    }
-    .cliente__box:hover:last-of-type:hover
-    {
-        margin-right: 2.1%;
-    }
+    .cliente__box:hover:first-of-type:hover {   margin-left: 2%; }
+    .cliente__box:hover:last-of-type:hover {  margin-right: 2.1%; }
     .cliente__box:hover p
     {
-       
-        width: 100%;
        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        color: white;
         display: block;
+        margin-left: 1rem;
+    }
+    .box__info{
+        font-size: 1.5rem;
     }
 
 
@@ -319,23 +365,3 @@ footer{  padding-top: 1rem; }
 
 
 
-.cliente__box{
- 
-    background-image: url("../img/placeholder.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 30rem; 
-}
-
-.cliente__box1{background-image: url("../img/empresa1.jpg");}
-.cliente__box2{background-image: url("../img/empresa2.jpg")}
-.cliente__box3{background-image: url("../img/empresa3.jpg");}
-.cliente__box4{background-image: url("../img/empresa4.jpg");}
-.cliente__box5{background-image: url("../img/empresa5.jpg");}
-
-
-
-
-
-.cliente__box p{ text-align: left; }
