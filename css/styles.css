@@ -177,7 +177,7 @@ p{
  }
 
 
-
+/* Botones  */
 
  .btn{
     display: block;
@@ -191,10 +191,11 @@ font-weight: 700;
   color: var(--colorSecundario);
 }
 
-
+/* Clientes */
 .clientes{
    
     padding-top: 3rem;
+    
     background-color: rgb(237, 100,126);
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     color: white;
@@ -227,13 +228,19 @@ font-weight: 700;
      display: block;
     padding: 1rem 0rem 0rem 1rem;
     text-align: left; }
+    
 
+
+/* Contacto */
+.contacto{
+    height: 30rem;
+}
 .contacto__info{
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     color: white;
-       position: relative;
-      z-index: 2;
-      bottom: 30rem;   
+    
+    color: white;
+      position: relative;
+     z-index: 2;
+  
 }
 .contacto__titulo{
     text-align: center;
@@ -243,18 +250,30 @@ font-weight: 700;
 }
 
 .contacto__imagen{
+   margin: 0 auto;
     background-image: url("../img/contacto.jpg");
     background-position: center;
     background-size: cover;
-    width: 100vh;
-    height: 30rem;
+    width: 150vh;
+    
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
-    position: relative;
+    position:absolute;
     z-index: 1;
- 
+ height: 30rem;
 }
 
-footer{  padding-top: 1rem; }
+.footer__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    
+}
+
+footer{  
+        background-color: var(--colorPrincipal);
+       
+    }
 
 /* Media queries para dispostivos tablet */
 @media (min-width: 768px) {
@@ -321,7 +340,13 @@ footer{  padding-top: 1rem; }
     .nos{
         margin-top: 0rem;
     }
+ 
+
+    .contacto__imagen{
+        width: 200vh;
+    }
 }
+   
 /* Media querie secccion promo */
 
 @media (min-width: 992px) 
@@ -383,6 +408,7 @@ footer{  padding-top: 1rem; }
 
     .cliente__box:hover 
     {
+        z-index: 1;
         transition: all 0.4s;
        transform: scale(1.2);
        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
@@ -400,6 +426,58 @@ footer{  padding-top: 1rem; }
         font-size: 1.5rem;
     }
 
+    .contacto{
+       
+        display: flex;
+        height: 35rem;
+        justify-content:space-between;
+      
+       
+        flex: 1;
+        z-index: -1;
+    }
+    .contacto__info{
+        
+        width: 100%;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+         position: static;
+         background-image: url(../img/contacto1.jpg);
+         background-position: center;
+         background-size: cover;
+         order: 1;
+         height: 35rem;
+        
+    }
+    .contacto__titulo{
+        font-size: 2rem;
+    }
+    .contacto__texto{
+        font-size: 2rem;
+    }
+    .contacto__imagen{
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.0);
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        position: static;
+        height: 35rem;
+        z-index: 0;
+       order: 2;
+        
+       
+    }
+
+
+
+
+
+    .footer__img{
+        position: static;
+       width: 7rem;
+      
+   
+
+}
 
 }
 
