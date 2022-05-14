@@ -167,13 +167,14 @@ p{
  /* Seccion Promo */
 
 
- .promo__texto{ padding: 0rem 0.3rem;}
+ .promo__texto{ padding: 0rem 0.3rem;
+}
  .promo__imagen{
      background-image: url("../img/promo.jpg");
      background-position: center;
      background-size: cover;
      width: 100%;
-     height: 18rem; 
+     height: 19rem; 
  }
 
 
@@ -254,8 +255,8 @@ font-weight: 700;
     background-image: url("../img/contacto.jpg");
     background-position: center;
     background-size: cover;
-    width: 150vh;
-    
+    width: 100%;
+   
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
     position:absolute;
     z-index: 1;
@@ -368,7 +369,7 @@ footer{
     
     .promo__imagen{
         width: 49%;
-        height: 62vh;
+        height: 75vh;
         order: 2; 
     }
     .promo__texto {
@@ -377,7 +378,7 @@ footer{
     .promo__principal {
        
         width: 49%;
-        height: 55vh;  
+        height:75vh;  
     }
 
     .botones{
@@ -445,6 +446,7 @@ footer{
          background-position: center;
          background-size: cover;
          order: 1;
+         z-index: 0;
         
         
     }
